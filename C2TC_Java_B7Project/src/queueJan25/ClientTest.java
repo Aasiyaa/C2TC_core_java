@@ -2,7 +2,7 @@ package queueJan25;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-import com.infotech.sort.VowelComparator;
+//import com.infotech.sort.VowelComparator;
 
 public class ClientTest {
 
