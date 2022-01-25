@@ -3,8 +3,8 @@ package genericsJan22;
 public class StringDemo {
 
 	public static void main(String[] args) {
-		String s1 = "Younus";
-		String s2 = "Younus";
+		String s1 = "asiya";
+		String s2 = "banu";
 		String s3 = new String("Programmer");
 		String s4 = new String("Programmer");
 		System.out.println("The length of Strings are:");
