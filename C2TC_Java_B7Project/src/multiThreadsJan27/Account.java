@@ -5,7 +5,7 @@ public class Account {
 	public static void main(String[] args) {
 		AClass oa=new AClass();
 		
-		DepositThread dt1=new DepositThread(oa, 5000,"First");
+		DepositThread dt1=new DepositThread(oa, 5000,"Firstdeposit");
 		//DepositThread dt2=new DepositThread(oa, 4000,"Second");
 		WithdrawThread wt1=new WithdrawThread(oa,111000,"firstWithdraw");
 		//WithdrawThread wt2=new WithdrawThread(oa,10000,"secondWithdraw");
