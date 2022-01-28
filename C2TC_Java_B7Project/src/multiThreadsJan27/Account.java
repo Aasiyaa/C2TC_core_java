@@ -6,14 +6,22 @@ public class Account {
 		AClass oa=new AClass();
 		
 		DepositThread dt1=new DepositThread(oa, 5000,"First");
-		DepositThread dt2=new DepositThread(oa, 4000,"Second");
+		//DepositThread dt2=new DepositThread(oa, 4000,"Second");
+		WithdrawThread wt1=new WithdrawThread(oa,111000,"firstWithdraw");
+		//WithdrawThread wt2=new WithdrawThread(oa,10000,"secondWithdraw");
 		
 		dt1.start();
-		dt2.start();
+		//dt2.start();
+		
+		wt1.start();
+		//wt2.start();
 		try
         {
         dt1.join();
-        dt2.join();
+        //dt2.join();
+			
+			wt1.join();
+			//wt2.join();
         }
         catch(Exception e)
         {
