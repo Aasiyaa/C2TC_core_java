@@ -1,8 +1,8 @@
 package lamdaexpressionfeb07;
 
-public class Demo1 {
+//public class Demo1 {
 
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		Thread obj=new Thread(new Runnable[)
 				{
@@ -15,20 +15,20 @@ public class Demo1 {
 		obj.start();
 	}
 
-}
+}*/
 //using lamda
 interface Lambda
 {
 	public void demo();
 }
 
-public class App
+public class Demo1
 {
 	public static void main(String args[])
 	{
 		new Thread(   ()->
 		{
-			System.out.println("this is a thread");
+			System.out.println("this is first thread");
 			}).start();
 	}
 	
