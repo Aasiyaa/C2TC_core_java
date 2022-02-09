@@ -20,5 +20,42 @@ public class StreamDemo
 		System.out.println("list elements");
 		Stream<String> mystream1=ll.stream();
 		mystream1.forEach(System.out::println);
+		
+		
+		Stream<String> mystream3=Stream.of("A","B","C","D");
+		System.out.println("-------------------");
+		System.out.println("STREAM ELEMENTS");
+		mystream3.forEach(System.out::println);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
