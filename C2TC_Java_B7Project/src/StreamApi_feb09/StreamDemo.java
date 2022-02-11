@@ -15,7 +15,7 @@ public class StreamDemo
 		System.out.println("array elements");
 		Stream<Integer>mystream=Arrays.stream(value);
 		mystream.forEach(System.out::println);
-		
+		 
 		System.out.println("-------------------");
 		System.out.println("list elements");
 		Stream<String> mystream1=ll.stream();

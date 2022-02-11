@@ -7,7 +7,7 @@ public class Account {
 		
 		DepositThread dt1=new DepositThread(oa, 5000,"Firstdeposit");
 		//DepositThread dt2=new DepositThread(oa, 4000,"Second");
-		WithdrawThread wt1=new WithdrawThread(oa,111000,"firstWithdraw");
+		WithdrawThread wt1=new WithdrawThread(oa,18000,"firstWithdraw");
 		//WithdrawThread wt2=new WithdrawThread(oa,10000,"secondWithdraw");
 		
 		dt1.start();
