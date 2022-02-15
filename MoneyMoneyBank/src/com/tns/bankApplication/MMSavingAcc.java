@@ -1,0 +1,31 @@
+package com.tns.bankApplication;
+
+import com.tns.bankFramework.*;
+
+
+public class MMSavingAcc extends SavingAcc {
+
+	
+	public MMSavingAcc(int accNo, String accName, float accBal, boolean isSalaried) {
+		super(accNo, accName, accBal, isSalaried);
+
+	}
+
+	
+
+	@Override
+	public void withdraw(float withdrawal) {
+
+		super.withdraw(withdrawal);
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "MMSavingAcc [toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + "]";
+	}
+
+	
+}
