@@ -1,22 +1,42 @@
 package com.tns.application;
 import com.tns.framework.PrimeAcc;
 
-public class GSPrimeAcc extends PrimeAcc
+public class GSPrimeAcc extends PrimeAcc 
 {
-	private static final float charges=0;
-	public GSPrimeAcc(int accNO, String accName, float charges, boolean isPrime)
+
+	private static final float charges=0; 
+	
+	
+	public GSPrimeAcc(int accNo, String accNm, float charges, boolean isPrime) 
 	{
-		super(accNO, accName, charges, isPrime);
-		
-	}
-	public void bookProduct(float charges)
-	{
-		
-	}
-	@Override
-	public String toString() {
-		return "GSPrimeAcc [accNO=" + accNO + ", accName=" + accName + ", charges=" + charges + ", toString()="
-				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+		super(accNo, accNm, charges, isPrime);
+		// TODO Auto-generated constructor stub
 	}
 	
+	public void bookProduct(float charges)
+	{	
+		if(isPrime()) {
+		System.out.println("Dear user your product has been booked"
+				+ "\n"
+				+ "Total amount: "+charges+" Delivery charge: "+getDeliverycharges());
+		}else {
+			System.out.println("Dear user your product has been booked"
+					+ "\n"
+					+ "Total amount: "+charges+" Delivery charge: "+50);
+			
+		}
+	}
+
+	public static float getCharges() {
+		return charges;
+	}
+
+	@Override
+	public String toString() {
+		return "GSPrimeAcc [isPrime=" + isPrime() + ", accNo=" + accNo + ", charges=" + charges + ", toString()="
+				+ super.toString() + ", getAccNm()=" + getAccNm() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + "]";
+	}
+	
+
 }

@@ -1,11 +1,19 @@
 package com.tns.framework;
-
 public abstract class ShopAcc 
 {
-	protected int accNO;
-	protected String accName;
+
+	protected int accNo;
+	private String accNm;
 	protected float charges;
-	 public void bookProduct(float charges)
+	
+	public ShopAcc(int accNo, String accNm, float charges) 
+	{
+		super();
+		this.accNo = accNo;
+		this.setAccNm(accNm);
+		this.charges = charges;
+	}
+	public void bookProduct(float charges)
 	{
 		
 	}
@@ -13,20 +21,17 @@ public abstract class ShopAcc
 	{
 		
 	}
-	
-	 public ShopAcc(int accNO, String accName, float charges) {
-		super();
-		this.accNO = accNO;
-		this.accName = accName;
-		this.charges = charges;
-	}
-	
 	@Override
 	public String toString() {
-		return "ShopAcc [accNO=" + accNO + ", accName=" + accName + ", charges=" + charges + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "ShopAcc [accNo=" + accNo + ", accNm=" + getAccNm() + ", charges=" + charges + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
-	
+	public String getAccNm() {
+		return accNm;
+	}
+	public void setAccNm(String accNm) {
+		this.accNm = accNm;
+	}
 	
 	
 }
